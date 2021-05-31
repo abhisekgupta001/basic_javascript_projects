@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: thistle;
+}
+
+.btn {
+  background: blueviolet;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  box-shadow: none;
+}

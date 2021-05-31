@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: thistle;
+}
+#container {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+.toast {
+  background-color: rgb(194, 59, 59);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+button {
+  background-color: coral;
+  color: black;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid coral;
+  border-radius: 5px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+button:hover {
+  border: 2px solid coral;
+  color: coral;
+  background-color: transparent;
+  transform: scale(1.1);
+}

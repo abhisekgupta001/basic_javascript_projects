@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background: coral;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid coral;
+  transition: transform 0.3s ease-in-out;
+}
+.btn:hover {
+  border: 2px solid coral;
+  background: transparent;
+  cursor: pointer;
+}
+
+.popup-container {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 3s ease-in;
+}
+.popup-container.active {
+  display: flex;
+  transition: all 0.3s ease-in;
+}
+.popup {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid coral;
+  padding: 1rem;
+  position: relative;
+}
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: coral;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+  transition: transform 0.5s ease-in-out;
+}
+#close:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
